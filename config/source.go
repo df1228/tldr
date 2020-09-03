@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	giturl = "https://github.com/tldr-pages/tldr.git"
+	giturl = "https://github.com/df1228/tldr-pages.git"
 )
 
 var (
@@ -89,9 +89,9 @@ func staled() (bool, error) {
 	if err != nil {
 		return false, err
 	}
-	
+
 	defer file.Close()
-	
+
 	fstat, err := file.Stat()
 	if err != nil {
 		return false, err
